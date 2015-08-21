@@ -1,0 +1,41 @@
+{
+  "name": "patient-health-questionnaire",
+  "version": "1.0.0",
+  "description": "For an interview",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexrattray/patient-health-questionnaire"
+  },
+  "author": "Alex Rattray <rattray.alex@gmail.com> (http://alexrattray.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexrattray/patient-health-questionnaire/issues"
+  },
+  "homepage": "https://github.com/alexrattray/patient-health-questionnaire",
+  "devDependencies": {
+    "autoprefixer-core": "^5.2.1",
+    "babel-core": "^5.8.22",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.16.0",
+    "cssnext-loader": "^1.0.1",
+    "file-loader": "^0.8.4",
+    "http-server": "^0.8.0",
+    "postcss-loader": "^0.5.1",
+    "simplehttpserver": "0.0.3",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.11.0"
+  },
+  "dependencies": {
+    "immutable-js": "^0.3.1-6",
+    "react": "^0.13.3",
+    "react-redux": "^0.9.0",
+    "react-router": "^0.13.3",
+    "redux": "^1.0.1",
+    "reselect": "0.0.2"
+  }
+}

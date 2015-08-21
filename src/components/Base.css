@@ -1,0 +1,21 @@
+body {
+  background: hwb(280, 90%, 3%);
+}
+
+.outer-wrapper {
+  margin: 20px;
+}
+
+.page-wrapper {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.page {
+  box-shadow: 0px 1px 3px rgba(0,0,20,.3);
+  border-radius: 3px;
+
+  padding: 30px;
+  background: white;
+
+}
