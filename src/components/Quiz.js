@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react/addons'
 import Immutable from 'immutable'
 import { RouteHandler, Link } from 'react-router'
 
@@ -18,7 +18,7 @@ export default class Quiz extends React.Component {
           how often have you been bothered by...
         </p>
         <hr />
-        <form onSubmit={this._handleSubmit}>
+        <form onSubmit={this._handleSubmit} >
           <RouteHandler {...this.props} />
         </form>
       </div>

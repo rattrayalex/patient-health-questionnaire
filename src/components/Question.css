@@ -1,0 +1,28 @@
+.question-transition-wrapper {
+  position: relative;
+}
+
+.question-enter {
+  position: relative;
+  right: -100%;
+  opacity: 0.01;
+}
+
+.question-enter.question-enter-active {
+  right: 0;
+  opacity: 1;
+  transition: all .5s ease-out;
+}
+
+.question-leave {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  opacity: 1;
+}
+
+.question-leave.question-leave-active {
+  left: -100%;
+  opacity: 0.01;
+  transition: all .5s ease-out;
+}

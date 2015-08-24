@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react/addons'
 import Immutable from 'immutable'
 
 import Option from './Option'
 import NextDoneButton from './NextDoneButton'
+import {} from './Question.css'
 
+const { CSSTransitionGroup } = React.addons
 
 // 1-indexed because user-facing in URL's (/quiz/question/0 would be confusing)
 function _getQuestionByIdx(questions, idx) {
@@ -25,14 +27,18 @@ export default class Question extends React.Component {
     )
 
     return (
-      <div>
-        <h4>{question.get('display')}</h4>
-        {Options}
-        <NextDoneButton
-          questions={questions}
-          question={question}
-          params={params}
-        />
+      <div style={{position: 'relative'}}>
+        <CSSTransitionGroup transitionName="question">
+          <div key={params.idx}>
+            <h4>{question.get('display')}</h4>
+            {Options}
+            <NextDoneButton
+              questions={questions}
+              question={question}
+              params={params}
+            />
+          </div>
+        </CSSTransitionGroup>
       </div>
     )
   }
